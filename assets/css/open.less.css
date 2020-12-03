@@ -1,0 +1,74 @@
+.open section {
+  margin-bottom: 50px;
+}
+.open h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.open h2 {
+  font-size: 57.6px;
+  font-weight: normal;
+  font-family: "UbuntuRegular", sans-serif;
+  line-height: 1.05em;
+}
+.open h2 small {
+  font-family: "UbuntuLight", sans-serif;
+  font-size: 0.65em;
+}
+.open .sourcecode ul.targetlist {
+  margin: 0;
+  list-style-type: none;
+}
+.open .sourcecode ul.targetlist li.target {
+  float: left;
+  width: 31%;
+  margin-right: 3.5%;
+}
+.open .sourcecode ul.targetlist li.target strong {
+  font-weight: normal;
+  font-family: "UbuntuLight", sans-serif;
+  font-size: 22px;
+}
+.open .sourcecode ul.targetlist li.target p {
+  margin-bottom: 0;
+}
+.open .sourcecode ul.targetlist li.target ul {
+  margin-left: 1.5em;
+}
+@media (max-width: 767px) {
+  .open .sourcecode ul.targetlist li.target {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+.open .sourcecode ul.targetlist li.target:last-child {
+  margin-right: 0;
+}
+.open .freesoftware ul {
+  margin: 0;
+  list-style-type: none;
+}
+.open .freesoftware ul li {
+  float: left;
+  width: 40%;
+  margin-right: 5%;
+}
+.open .freesoftware ul li strong {
+  font-weight: normal;
+  font-family: "UbuntuLight", sans-serif;
+  font-size: 22px;
+}
+.open .freesoftware ul li .button i {
+  margin-left: 0.1em;
+  font-size: 110%;
+}
+@media (max-width: 767px) {
+  .open .freesoftware ul li {
+    width: 100%;
+  }
+}
+.open .freesoftware ul li:last-child {
+  margin-right: 0;
+}
+

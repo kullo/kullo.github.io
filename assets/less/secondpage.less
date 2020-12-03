@@ -1,0 +1,82 @@
+// This file is used for everything which is not shown on the frontpage.
+// Typically styles which are common for downloads and blog
+
+@import "mixins/LESS-Prefixer/prefixer.less";
+@import "includes/constants.less";
+@import "includes/retina.less";
+
+#page {
+    padding-top: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .pagecontent {
+        max-width: @max_content_width;
+        margin: 0 auto;
+    }
+}
+
+#back-to-home {
+    float: left;
+    height: 30px;
+
+    a {
+        display: inline-block;
+        padding-right: 5px;
+        height: 24px;
+        line-height: 24px;
+        color: @gray;
+        font-size: @default;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        .icon {
+            vertical-align: top;
+            display: inline-block;
+            height: 24px;
+            padding-bottom: 2px;
+            width: 16px;
+            font-size: 28px;
+        }
+    }
+
+    a:hover,
+    a:active {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 479px) { .screen-normal { display: none; } }
+    @media (min-width: 480px) { .screen-narrow { display: none; } }
+}
+
+//
+// HTML Code tags
+// <dfn>    Defines a definition term
+// <code>   Defines a piece of computer code
+// <samp>   Defines sample output from a computer program
+// <kbd>    Defines keyboard input
+// <var>    Defines a variable
+//
+pre, code, kbd, samp, var {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: @black;
+    font: 14px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+// inline
+code, kbd, samp, var {
+    padding: 1px 5px;
+}
+
+pre {
+    line-height: 1.5;
+    margin-bottom: 1.625em;
+    overflow: auto;
+    white-space: pre;
+    padding: 0.75em 1.625em;
+
+    code {
+        padding: 0;
+        background-color: transparent;
+    }
+}

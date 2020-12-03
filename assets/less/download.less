@@ -1,0 +1,290 @@
+@import "mixins/LESS-Prefixer/prefixer.less";
+@import "includes/constants.less";
+@import "includes/retina.less";
+
+#downloadframe {
+    width: 0;
+    height: 0;
+}
+
+.button.download {
+    i {
+        text-align: center;
+        display: block;
+        float: right;
+        font-size: 40px;
+        height: 40px;
+        width: 40px;
+
+        margin-left: 15px;
+    }
+}
+
+#page.downloads {
+    width: 100%;
+    margin-bottom: 100px;
+
+    @padding_h: 10px;
+    padding-left: @padding_h;
+    padding-right: @padding_h;
+
+    pre {
+        white-space: nowrap;
+    }
+
+    .pagecontent {
+        max-width: @ipad_width - 2*@padding_h;
+    }
+
+    section {
+        margin-bottom: 100px;
+    }
+
+    section.threeStepsBox {
+        text-align: center;
+
+        .threeSteps {
+            width: 700px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .buttonlist {
+        float: left;
+        width: 250px;
+
+        .button {
+            margin-right: 0;
+            margin-bottom: 0px;
+            line-height: 40px;
+            background-color: transparent;
+            color: @black;
+            .box-shadow(none);
+            min-width: 250px;
+            text-align: left;
+
+            i {
+                float: left;
+                margin-right: 12px;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                font-size: 32px;
+                height: 32px;
+                width: 32px;
+            }
+
+            @media (min-width: @ipad_width) {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    	.button:last-child { margin-right: 0; }
+
+        .button.selected {
+            background-color: @backgroundLight;
+        }
+
+        @media (max-width: (@ipad_width - 1px)) {
+            width: 100%;
+            height: 48px;
+            overflow: visible;
+            z-index: 3;
+
+            ul.closed {
+                height: 48px;
+
+                .button {
+                    display: none;
+                }
+
+                .button.selected {
+                    display: block;
+                    background-color: @blue;
+                }
+            }
+
+            ul {
+                float: right;
+                position: relative;
+                height: 240px; // 5*48
+                background-color: @blueLight;
+
+                @media (max-width: 400px) {
+                    float: none;
+                    margin-right: 48px;
+                }
+            }
+
+            .button {
+                float: left;
+                min-width: 0;
+                width: 252px;
+                border-radius: 0;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                color: @white;
+
+                @media (max-width: 400px) {
+                    width: 100%;
+                }
+
+                i {
+                    display: none;
+                }
+            }
+
+            .button.selected,
+            .button:hover {
+                background-color: @blue;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+
+        @media (max-width: (@ipad_width - 1px)) {
+            display: inline-block;
+        }
+
+        background-color: @blueLight;
+        color: @white;
+        float: right;
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        line-height: 48px;
+        font-size: 25px;
+    }
+
+    p {
+        margin-bottom: 1.625em
+    }
+
+    .details {
+        float: left;
+        background-color: @backgroundLight;
+        color: @gray;
+
+        padding: 20px 30px;
+        @media (max-width: 400px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        width: @ipad_width - 2*@padding_h - 250px;
+        min-height: 200px;
+        @media (max-width: (@ipad_width - 1px)) {
+            width: 100%;
+            min-height: 0;
+        }
+
+        .detailpage {
+            display: none;
+
+            .downloadbuttoncontainer {
+                text-align: center;
+                margin-bottom: 1.625em;
+
+                @media (max-width: 400px) {
+                    .button {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .description {
+                ul { list-style: square inside none }
+                a {
+                    color: @gray;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .devicepicturebox {
+        float: right;
+        margin-left: 20px;
+
+        @media (max-width: 479px) {
+            float: none;
+            margin: 0;
+            text-align: center;
+        }
+
+        .androidscreenshot {
+            width: 180px;
+        }
+
+        .iphonescreenshot {
+            width: 189px;
+        }
+    }
+}
+
+.changelog {
+    .tag {
+        font-family: @font_regular;
+        font-weight: normal;
+        font-size: 0.7em;
+        padding: 2px 8px;
+        .border-radius(4px);
+        .rotate(-5deg);
+        display: inline-block;
+    }
+
+    .tag.important {
+        background-color: @purple;
+        color: @white;
+    }
+
+    a.tag:focus,
+    a.tag:active,
+    a.tag:hover {
+        text-decoration: none;
+    }
+
+    a.tag.important:focus,
+    a.tag.important:active,
+    a.tag.important:hover {
+        background-color: @purpleLight;
+    }
+}
+
+.store-badge {
+    display: inline-block;
+
+    width: 189px;
+    height: 56px;
+    .background-size(189px 56px);
+}
+
+.appstore.de {
+    background-image: url(../images/download/badge-appstore-de.png);
+    .retina({
+        background-image: url(../images/download/badge-appstore-de@2x.png);
+    });
+}
+
+.appstore.en {
+    background-image: url(../images/download/badge-appstore-en.png);
+    .retina({
+        background-image: url(../images/download/badge-appstore-en@2x.png);
+    });
+}
+
+.googleplay.de {
+    background-image: url(../images/download/badge-play-de.png);
+    .retina({
+        background-image: url(../images/download/badge-play-de@2x.png);
+    });
+}
+
+.googleplay.en {
+    background-image: url(../images/download/badge-play-en.png);
+    .retina({
+        background-image: url(../images/download/badge-play-en@2x.png);
+    });
+}

@@ -1,0 +1,92 @@
+@import "mixins/LESS-Prefixer/prefixer.less";
+@import "includes/constants.less";
+
+.open {
+    section {
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 1.8*@big;
+        font-weight: normal;
+        font-family: @font_regular;
+        line-height: 1.05em;
+
+        small {
+            font-family: @font_light;
+            font-size: 0.65em;
+        }
+    }
+
+    .sourcecode {
+        ul.targetlist {
+            margin: 0;
+            list-style-type: none;
+
+            li.target {
+                float: left;
+                width: 31%;
+                margin-right: 3.5%;
+
+                strong {
+                    font-weight: normal;
+                    font-family: @font_light;
+                    font-size: 22px;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                ul {
+                    margin-left: 1.5em;
+                }
+
+                @media (max-width: (@ipad_width - 1px)) {
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+            }
+            li.target:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .freesoftware {
+        ul {
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                float: left;
+                width: 40%;
+                margin-right: 5%;
+
+                strong {
+                    font-weight: normal;
+                    font-family: @font_light;
+                    font-size: 22px;
+                }
+
+                .button i {
+                    margin-left: 0.1em;
+                    font-size: 110%;
+                }
+
+                @media (max-width: (@ipad_width - 1px)) {
+                    width: 100%;
+                }
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

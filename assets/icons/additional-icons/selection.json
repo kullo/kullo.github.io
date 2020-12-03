@@ -1,0 +1,73 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M512-0c-282.77 0-512 229.23-512 512 0 0 0 0 0 0.001 0 282.77 229.23 512 512 512s512-229.23 512-512c0-0 0-0 0-0.001 0-282.77-229.23-512-512-512zM752.916 195.596l-222.882 316.378 222.773 314.606-41.185-0.594-200.387-288.605-202.983 288.681-37.403 0.102 222.361-313.992-221.992-316.193 36.126 1.193 203.891 287.303 201.143-288.504 40.538-0.336z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"osx"
+				]
+			},
+			"attrs": [],
+			"properties": {
+				"order": 1,
+				"id": 0,
+				"prevSize": 32,
+				"code": 59648,
+				"name": "osx",
+				"ligatures": "osx"
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 0
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "additional-icons"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "additional-icons",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"embed": false,
+			"includeMetadata": false,
+			"showSelector": true,
+			"selector": "class",
+			"showMetrics": false,
+			"showMetadata": false,
+			"showVersion": false,
+			"classSelector": ".additionalicons"
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 4473924,
+			"bgColor": 16777215,
+			"classSelector": ".icon"
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false
+	}
+}

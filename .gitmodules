@@ -1,0 +1,3 @@
+[submodule "assets/less/mixins/LESS-Prefixer"]
+	path = assets/less/mixins/LESS-Prefixer
+	url = https://github.com/JoelSutherland/LESS-Prefixer.git

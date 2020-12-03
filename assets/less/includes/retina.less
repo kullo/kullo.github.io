@@ -1,0 +1,14 @@
+// This method requires less version 1.7
+// http://lesscss.org/features/#detached-rulesets-feature
+
+.retina(@rules) {
+    // See Wordpress's recommendation
+    // in file: wp-admin/css/common.css
+
+    @media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+        @rules();
+    }
+}
