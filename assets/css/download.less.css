@@ -1,0 +1,261 @@
+#downloadframe {
+  width: 0;
+  height: 0;
+}
+.button.download i {
+  text-align: center;
+  display: block;
+  float: right;
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+  margin-left: 15px;
+}
+#page.downloads {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#page.downloads pre {
+  white-space: nowrap;
+}
+#page.downloads .pagecontent {
+  max-width: 748px;
+}
+#page.downloads section {
+  margin-bottom: 100px;
+}
+#page.downloads section.threeStepsBox {
+  text-align: center;
+}
+#page.downloads section.threeStepsBox .threeSteps {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#page.downloads .buttonlist {
+  float: left;
+  width: 250px;
+}
+#page.downloads .buttonlist .button {
+  margin-right: 0;
+  margin-bottom: 0px;
+  line-height: 40px;
+  background-color: transparent;
+  color: #1A171B;
+  box-shadow: none;
+  min-width: 250px;
+  text-align: left;
+}
+#page.downloads .buttonlist .button i {
+  float: left;
+  margin-right: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 32px;
+  height: 32px;
+  width: 32px;
+}
+@media (min-width: 768px) {
+  #page.downloads .buttonlist .button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+#page.downloads .buttonlist .button:last-child {
+  margin-right: 0;
+}
+#page.downloads .buttonlist .button.selected {
+  background-color: #F1ECDD;
+}
+@media (max-width: 767px) {
+  #page.downloads .buttonlist {
+    width: 100%;
+    height: 48px;
+    overflow: visible;
+    z-index: 3;
+  }
+  #page.downloads .buttonlist ul.closed {
+    height: 48px;
+  }
+  #page.downloads .buttonlist ul.closed .button {
+    display: none;
+  }
+  #page.downloads .buttonlist ul.closed .button.selected {
+    display: block;
+    background-color: #044C98;
+  }
+  #page.downloads .buttonlist ul {
+    float: right;
+    position: relative;
+    height: 240px;
+    background-color: #186FB1;
+  }
+  #page.downloads .buttonlist .button {
+    float: left;
+    min-width: 0;
+    width: 252px;
+    border-radius: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+  }
+  #page.downloads .buttonlist .button i {
+    display: none;
+  }
+  #page.downloads .buttonlist .button.selected,
+  #page.downloads .buttonlist .button:hover {
+    background-color: #044C98;
+  }
+}
+@media (max-width: 767px) and (max-width: 400px) {
+  #page.downloads .buttonlist ul {
+    float: none;
+    margin-right: 48px;
+  }
+}
+@media (max-width: 767px) and (max-width: 400px) {
+  #page.downloads .buttonlist .button {
+    width: 100%;
+  }
+}
+#page.downloads .hamburger {
+  display: none;
+  background-color: #186FB1;
+  color: white;
+  float: right;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 25px;
+}
+@media (max-width: 767px) {
+  #page.downloads .hamburger {
+    display: inline-block;
+  }
+}
+#page.downloads p {
+  margin-bottom: 1.625em;
+}
+#page.downloads .details {
+  float: left;
+  background-color: #F1ECDD;
+  color: #585759;
+  padding: 20px 30px;
+  width: 498px;
+  min-height: 200px;
+}
+@media (max-width: 400px) {
+  #page.downloads .details {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  #page.downloads .details {
+    width: 100%;
+    min-height: 0;
+  }
+}
+#page.downloads .details .detailpage {
+  display: none;
+}
+#page.downloads .details .detailpage .downloadbuttoncontainer {
+  text-align: center;
+  margin-bottom: 1.625em;
+}
+@media (max-width: 400px) {
+  #page.downloads .details .detailpage .downloadbuttoncontainer .button {
+    width: 100%;
+  }
+}
+#page.downloads .details .detailpage .description ul {
+  list-style: square inside none;
+}
+#page.downloads .details .detailpage .description a {
+  color: #585759;
+  text-decoration: underline;
+}
+#page.downloads .devicepicturebox {
+  float: right;
+  margin-left: 20px;
+}
+@media (max-width: 479px) {
+  #page.downloads .devicepicturebox {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+}
+#page.downloads .devicepicturebox .androidscreenshot {
+  width: 180px;
+}
+#page.downloads .devicepicturebox .iphonescreenshot {
+  width: 189px;
+}
+.changelog .tag {
+  font-family: "UbuntuRegular", sans-serif;
+  font-weight: normal;
+  font-size: 0.7em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  display: inline-block;
+}
+.changelog .tag.important {
+  background-color: #771C7F;
+  color: white;
+}
+.changelog a.tag:focus,
+.changelog a.tag:active,
+.changelog a.tag:hover {
+  text-decoration: none;
+}
+.changelog a.tag.important:focus,
+.changelog a.tag.important:active,
+.changelog a.tag.important:hover {
+  background-color: #91127D;
+}
+.store-badge {
+  display: inline-block;
+  width: 189px;
+  height: 56px;
+  background-size: 189px 56px;
+}
+.appstore.de {
+  background-image: url(../images/download/badge-appstore-de.png);
+}
+@media print, (-o-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .appstore.de {
+    background-image: url(../images/download/badge-appstore-de@2x.png);
+  }
+}
+.appstore.en {
+  background-image: url(../images/download/badge-appstore-en.png);
+}
+@media print, (-o-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .appstore.en {
+    background-image: url(../images/download/badge-appstore-en@2x.png);
+  }
+}
+.googleplay.de {
+  background-image: url(../images/download/badge-play-de.png);
+}
+@media print, (-o-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .googleplay.de {
+    background-image: url(../images/download/badge-play-de@2x.png);
+  }
+}
+.googleplay.en {
+  background-image: url(../images/download/badge-play-en.png);
+}
+@media print, (-o-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .googleplay.en {
+    background-image: url(../images/download/badge-play-en@2x.png);
+  }
+}
+

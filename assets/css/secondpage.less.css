@@ -1,0 +1,72 @@
+#page {
+  padding-top: 140px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#page .pagecontent {
+  max-width: 980px;
+  margin: 0 auto;
+}
+#back-to-home {
+  float: left;
+  height: 30px;
+}
+#back-to-home a {
+  display: inline-block;
+  padding-right: 5px;
+  height: 24px;
+  line-height: 24px;
+  color: #585759;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#back-to-home a .icon {
+  vertical-align: top;
+  display: inline-block;
+  height: 24px;
+  padding-bottom: 2px;
+  width: 16px;
+  font-size: 28px;
+}
+#back-to-home a:hover,
+#back-to-home a:active {
+  text-decoration: underline;
+}
+@media (max-width: 479px) {
+  #back-to-home .screen-normal {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  #back-to-home .screen-narrow {
+    display: none;
+  }
+}
+pre,
+code,
+kbd,
+samp,
+var {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #1A171B;
+  font: 14px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+code,
+kbd,
+samp,
+var {
+  padding: 1px 5px;
+}
+pre {
+  line-height: 1.5;
+  margin-bottom: 1.625em;
+  overflow: auto;
+  white-space: pre;
+  padding: 0.75em 1.625em;
+}
+pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
